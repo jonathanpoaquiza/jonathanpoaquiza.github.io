@@ -11,7 +11,4 @@
         menu.classList.remove('nav__link--show');
     });
 
-    
-
-
 })();
