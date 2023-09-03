@@ -64,8 +64,10 @@
 
         <section class="hero__container container">
             <h1 class="hero__title">Proyecto GR1SW: Compiladores Y Lenguajes</h1>
-            <p class="hero__paragraph">Nuestro objetivo es crear y
-                 proporcionar un recurso educativo y de referencia completo sobre compiladores y lenguajes de programación.</p>
+            <p class="hero__paragraph">
+                Nuestro objetivo es crear y
+                proporcionar un recurso educativo y de referencia completo sobre compiladores y lenguajes de programación.
+            </p>
             <a href="#" class="cta">Go Panthers!</a>
         </section>
     </header>
@@ -77,8 +79,12 @@
 
                 <section class="integrantes__body integrantes__body--show" data-id="1">
                     <div class="integrantes__texts">
-                        <h2 class="subtitle">Eddy Arias<span class="integrantes__course">Estudiante
-                                de Software de la EPN</span></h2>
+                        <h2 class="subtitle">
+                            Eddy Arias<span class="integrantes__course">
+                                Estudiante
+                                de Software de la EPN
+                            </span>
+                        </h2>
                         <p class="integrantes__review">info. y descripción del estudiante</p>
                     </div>
 
@@ -89,8 +95,12 @@
 
                 <section class="integrantes__body" data-id="2">
                     <div class="integrantes__texts">
-                        <h2 class="subtitle">Karina Arichavala<span class="integrantes__course">Estudiante
-                                de Software de la EPN</span></h2>
+                        <h2 class="subtitle">
+                            Karina Arichavala<span class="integrantes__course">
+                                Estudiante
+                                de Software de la EPN
+                            </span>
+                        </h2>
                         <p class="integrantes__review">info. y descripción del estudiante</p>
                     </div>
 
@@ -101,8 +111,12 @@
 
                 <section class="integrantes__body" data-id="3">
                     <div class="integrantes__texts">
-                        <h2 class="subtitle">Milton Pástor<span class="integrantes__course">Estudiante
-                                de Software de la EPN</span></h2>
+                        <h2 class="subtitle">
+                            Milton Pástor<span class="integrantes__course">
+                                Estudiante
+                                de Software de la EPN
+                            </span>
+                        </h2>
                         <p class="integrantes__review">info. y descripción del estudiante</p>
                     </div>
 
@@ -113,8 +127,12 @@
 
                 <section class="integrantes__body" data-id="4">
                     <div class="integrantes__texts">
-                        <h2 class="subtitle">Jonathan Poaquiza<span class="integrantes__course">Estudiante
-                                de Software de la EPN</span></h2>
+                        <h2 class="subtitle">
+                            Jonathan Poaquiza<span class="integrantes__course">
+                                Estudiante
+                                de Software de la EPN
+                            </span>
+                        </h2>
                         <p class="integrantes__review">info. y descripción del estudiante</p>
                     </div>
 
@@ -129,8 +147,10 @@
 
         <section class="container about">
             <h2 class="subtitle">Introducción a Compiladores y Lenguajes:</h2>
-            <p class="about__paragraph">Una visión general de lo que son los compiladores y los lenguajes de programación.
-                Importancia y aplicación en el desarrollo de software.</p>
+            <p class="about__paragraph">
+                Una visión general de lo que son los compiladores y los lenguajes de programación.
+                Importancia y aplicación en el desarrollo de software.
+            </p>
 
             <div class="about__main">
                 <article class="about__icons">
@@ -173,14 +193,14 @@
 
             <div class="language__table">
                 <div class="language__element">
-                    
+
                     <h3 class="language__language">Python <img src="./images/python.svg"></h3>
                     <p class="language__name">Lenguaje de alto nivel</p>
                     <div class="language__items">
                         <p class="language__features">Sintaxis Clara y Legible</p>
                     </div>
 
-                    <a href="#" class="language__cta">Más información</a>
+                    <a href="#" id="abrirPopup" class="language__cta">Más información</a>
                 </div>
 
 
@@ -225,7 +245,8 @@
             <section class="questions__container">
                 <article class="questions__padding">
                     <div class="questions__answer">
-                        <h3 class="questions__title">¿Qué es un lenguaje de alto nivel?
+                        <h3 class="questions__title">
+                            ¿Qué es un lenguaje de alto nivel?
                             <span class="questions__arrow">
                                 <img src="./images/arrow.svg" class="questions__img">
                             </span>
@@ -237,7 +258,8 @@
 
                 <article class="questions__padding">
                     <div class="questions__answer">
-                        <h3 class="questions__title">¿Cuál es el propósito del análisis léxico y sintáctico en la compilación?
+                        <h3 class="questions__title">
+                            ¿Cuál es el propósito del análisis léxico y sintáctico en la compilación?
                             <span class="questions__arrow">
                                 <img src="./images/arrow.svg" class="questions__img">
                             </span>
@@ -249,7 +271,8 @@
 
                 <article class="questions__padding">
                     <div class="questions__answer">
-                        <h3 class="questions__title">¿Qué es la depuración y cómo se lleva a cabo en el proceso de programación?
+                        <h3 class="questions__title">
+                            ¿Qué es la depuración y cómo se lleva a cabo en el proceso de programación?
                             <span class="questions__arrow">
                                 <img src="./images/arrow.svg" class="questions__img">
                             </span>
@@ -313,6 +336,19 @@
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
     <script src="./js/menu.js"></script>
+    <script>
+        document.getElementById('abrirPopup').addEventListener('click', function (e) {
+            e.preventDefault(); // Evita que el enlace se comporte normalmente
+
+            // Especifica el tamaño y otras propiedades de la ventana emergente
+            const ventanaPopup = window.open('indexMasInformacionPython.html', 'popup', 'width=400,height=300,scrollbars=yes');
+
+            // Centra la ventana emergente en la pantalla
+            ventanaPopup.moveTo((window.innerWidth - 400) / 2, (window.innerHeight - 300) / 2);
+        });
+    </script>
+
 </body>
+
 
 </html>
