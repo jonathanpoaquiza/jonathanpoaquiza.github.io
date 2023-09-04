@@ -61,5 +61,183 @@
         </div>
     </section>
 
+    <section class="knowledge" style="display: flex; justify-content: center;">
+        <div class="seccion flexBox">
+            <h2 class="marginTop">Cuál es la diferencia entre el compilador y el interprete</h2>
+            <div class="flexBox marginTop">
+                <p class="justificado">
+                    La principal diferencia entre un compilador y un intérprete es el momento en que se produce la traducción del código fuente a código máquina.
+                    Un compilador realiza la traducción antes de que el programa se ejecute, mientras que un intérprete realiza la traducción durante la ejecución del programa.
+                </p>
+            </div>
+            <div class="flexBox marginTop"  >
+                <h3>Ventajas del compilador:</h3>
+                <table class="marginTop" >
+                    <tr>
+                        <th>1ero</th>
+                        <td> - Los programas compilados suelen ser más rápidos que los programas interpretados, ya que el código máquina no necesita ser interpretado cada vez que el programa se ejecuta.</td>
+                    </tr>
+                    <tr>
+                        <th>2da</th>
+                        <td> - Los programas compilados son más fáciles de depurar, ya que los errores se pueden detectar antes de que el programa se ejecute.</td>
+                    </tr>
+                    <tr>
+                        <th>3era</th>
+                        <td> - Los programas compilados son más fáciles de distribuir, ya que solo necesitan ser distribuidos una vez, en forma de código máquina.</td>
+                    </tr>
+                </table>
+
+                <h3 class="marginTop">Desventajas del compilador:</h3>
+                <table class="marginTop" >
+                    <tr>
+                        <th>1ero</th>
+                        <td> - La compilación puede ser un proceso lento, especialmente para programas grandes o complejos.</td>
+                    </tr>
+                    <tr>
+                        <th>2da</th>
+                        <td> - Los programas compilados pueden ser menos flexibles que los programas interpretados, ya que no pueden ser modificados fácilmente mientras se están ejecutando.</td>
+                    </tr>
+                </table>
+                <br/>
+                 <p>Podemos resumir estos datos de la siguiente manera: </p>
+                 <table class="marginTop">
+                    <tr>
+                      <th>Característica</th>
+                      <th>Compilador</th>
+                      <th>Intérprete</th>
+                    </tr>
+                    <tr>
+                      <td>Momento de la traducción</td>
+                      <td>Antes de la ejecución</td>
+                      <td>Durante la ejecución</td>
+                    </tr>
+                    <tr>
+                      <td>Velocidad</td>
+                      <td>Más rápido</td>
+                      <td>Más lento</td>
+                    </tr>
+                    <tr>
+                      <td>Depuración</td>
+                      <td>Más fácil</td>
+                      <td>Más difícil</td>
+                    </tr>
+                    <tr>
+                      <td>Distribución</td>
+                      <td>Más fácil</td>
+                      <td>Más difícil</td>
+                    </tr>
+                    <tr>
+                      <td>Flexibilidad</td>
+                      <td>Menos flexible</td>
+                      <td>Más flexible</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="container resumenTeoria">
+        <h2 class="subtitle">¿Qué es un analizador léxico?</h2>
+        <p>
+            Un analizador léxico es una parte de un compilador que toma el código fuente de un programa y lo divide en unidades más pequeñas llamadas tokens.
+             Los tokens son las unidades básicas del lenguaje de programación, y representan cosas como palabras clave, identificadores, números, operadores y caracteres especiales.
+        </p><br/>
+        <p>
+            El analizador léxico es una parte esencial del proceso de compilación porque ayuda a garantizar que el código fuente sea válido y que se pueda traducir correctamente al código máquina.
+        </p><br/>
+        <table>
+            <thead>
+              <tr>
+                <th>Función</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Leer el código fuente de un programa y dividirlo en tokens.</td>
+                <td>Los tokens son las unidades básicas del lenguaje de programación, y representan cosas como palabras clave, identificadores, números, operadores y caracteres especiales.</td>
+              </tr>
+              <tr>
+                <td>Identificar los tokens en el código fuente.</td>
+                <td>Para ello, el analizador léxico utiliza un conjunto de reglas de reconocimiento de patrones para identificar los patrones que corresponden a los tokens.</td>
+              </tr>
+              <tr>
+                <td>Enviar los tokens al analizador sintáctico.</td>
+                <td>El analizador sintáctico utiliza estos tokens para construir un árbol sintáctico, que representa la estructura del código fuente.</td>
+              </tr>
+            </tbody>
+        </table>
+        <div class="flexBox marginTop">
+            <img src="../images/teoriaCompiladores/analizador lexico.png" class="center" style="width: 825px;">
+        </div>
+    </section>
+
+    <section class="knowledge" style="display: flex; align-items: center; flex-direction: column;">
+        <div class="seccion flexBox">
+            <h2 class="marginTop">¿Qué son las expresiones regulares?</h2>
+    
+            <p class="marginTop">Las expresiones regulares son patrones que se utilizan para buscar o reconocer cadenas de texto. Son una herramienta poderosa que se puede utilizar para una variedad de tareas.</p>
+    
+            <h3 class="marginTop">Usos de las expresiones regulares</h3>
+    
+            <table class="marginTop">
+                <thead>
+                    <tr>
+                    <th>Tarea</th>
+                    <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Buscar patrones en texto</td>
+                    <td>Las expresiones regulares se pueden utilizar para buscar patrones específicos en texto, como direcciones de correo electrónico, números de teléfono, u otras cadenas de texto.</td>
+                    </tr>
+                    <tr>
+                    <td>Validar texto</td>
+                    <td>Las expresiones regulares se pueden utilizar para validar texto para garantizar que cumpla con ciertos criterios, como longitud mínima o máxima, o formato específico.</td>
+                    </tr>
+                    <tr>
+                    <td>Manipular texto</td>
+                    <td>Las expresiones regulares se pueden utilizar para manipular texto, como reemplazar texto, eliminar texto, o dividir texto en partes.</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <h3 class="marginTop">Caracteres y símbolos de las expresiones regulares</h3>
+    
+            <table class="marginTop">
+                <thead>
+                    <tr>
+                    <th>Tipo</th>
+                    <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Caracteres literales</td>
+                    <td>Los caracteres literales representan caracteres individuales en el texto. Por ejemplo, el carácter "a" representa la letra "a" en el texto.</td>
+                    </tr>
+                    <tr>
+                    <td>Clases de caracteres</td>
+                    <td>Las clases de caracteres representan grupos de caracteres. Por ejemplo, la clase de caracteres "[a-z]" representa todas las letras minúsculas del alfabeto inglés.</td>
+                    </tr>
+                    <tr>
+                    <td>Operadores</td>
+                    <td>Los operadores se utilizan para combinar caracteres y símbolos para formar patrones más complejos.
+                        Por ejemplo, el operador ".*" representa cualquier cadena de caracteres de longitud arbitraria.</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <h3 class="marginTop">Complejidad y poder de las expresiones regulares</h3>
+    
+            <p class="marginTop">Las expresiones regulares pueden ser bastante complejas, pero también son muy poderosas.
+                Con un poco de práctica, podrás utilizar las expresiones regulares para realizar tareas complejas en texto de manera rápida y eficiente.</p>
+
+            <div class="flexBox marginTop">
+                <img src="../images/teoriaCompiladores/expresiones regulares.jpg" class="center" style="width: 1000px;">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
