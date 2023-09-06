@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="./css/javascript.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Javascript</title>
 </head>
 <body>
@@ -45,37 +46,84 @@
     </header>
 
     <section class="container about">
-        <h2 class="subtitle">¿Qué es Javascript?</h2>
-        <p class="about__paragraph">Es un lenguaje de programación de alto nivel ampliamente utilizado para crear aplicaciones web interactivas y dinámicas. 
-            Es una de las tecnologías fundamentales para el desarrollo web front-end y se 
-            utiliza en conjunto con HTML y CSS para crear experiencias de usuario modernas en la web.</p>
+        <h2 class="subtitle">¿Qué es JavaScript?</h2>
+        
 
-        <div class="about__main">
-            <article class="about__icons">
-                <h3 class="about__title">Historia</h3>
-                <p class="about__paragrah">JavaScript fue creado originalmente en 1995 por Brendan Eich en Netscape como un lenguaje de script para mejorar la interactividad en navegadores web.</p>
-                <p class="about__paragrah">Inicialmente, JavaScript se llamaba "LiveScript" pero luego se cambió a "JavaScript" debido a consideraciones de marketing relacionadas con Java.</p>
-                <p class="about__paragrah">En 1997, se estandarizó como ECMAScript, y desde entonces ha evolucionado con nuevas versiones y características.</p>
-            </article>
+    </section>
+    <section class="knowledge" style="display: flex; justify-content: center;">
+        <div class="seccion flexBox">
+            <p class="justificado">Es un lenguaje de programación de alto nivel ampliamente utilizado para crear aplicaciones web interactivas y dinámicas. 
+                Es una de las tecnologías fundamentales para el desarrollo web front-end y se 
+                utiliza en conjunto con HTML y CSS para crear experiencias de usuario modernas en la web.</p>
+            <div class="about__main">
+                <article class="about__icons">
+                    <h3 class="about__title">Historia</h3>
+                    <p class="justificado">JavaScript fue creado originalmente en 1995 por Brendan Eich en Netscape como un lenguaje de script para mejorar la interactividad en navegadores web.</p>
+                    <p class="justificado">Inicialmente, JavaScript se llamaba "LiveScript" pero luego se cambió a "JavaScript" debido a consideraciones de marketing relacionadas con Java.</p>
+                    <p class="justificado">En 1997, se estandarizó como ECMAScript, y desde entonces ha evolucionado con nuevas versiones y características.</p>
+                </article>
 
-            <article class="about__icons">
-                <h3 class="about__title">Características Clave</h3>
-                <p class="about__paragrah">JavaScript es un lenguaje de programación interpretado, lo que significa que el código fuente se ejecuta directamente en el navegador del usuario sin necesidad de compilación previa.</p>
-                <p class="about__paragrah">JavaScript es un lenguaje de tipado dinámico, lo que permite asignar diferentes tipos de datos a una variable en tiempo de ejecución.</p>
-                <p class="about__paragrah">JavaScript se basa en la programación orientada a eventos y se utiliza para agregar interactividad a páginas web, como manejar clics de botones, enviar formularios, etc.</p>
-                <p class="about__paragrah">Modelo de Objetos del Documento (DOM): Permite a JavaScript acceder y manipular elementos HTML y CSS en una página web, lo que permite actualizar dinámicamente el contenido y la apariencia de la página.</p>
-                <p class="about__paragrah">JavaScript es especialmente adecuado para operaciones asincrónicas, como cargar datos de servidores remotos sin bloquear la ejecución del código.</p>
-            </article>
+                <article class="about__icons">
+                    <h3 class="about__title">Características Clave</h3>
+                    <p class="justificado">JavaScript es un lenguaje de programación interpretado, lo que significa que el código fuente se ejecuta directamente en el navegador del usuario sin necesidad de compilación previa.</p>
+                    <p class="justificado">JavaScript es un lenguaje de tipado dinámico, lo que permite asignar diferentes tipos de datos a una variable en tiempo de ejecución.</p>
+                    <p class="justificado">JavaScript se basa en la programación orientada a eventos y se utiliza para agregar interactividad a páginas web, como manejar clics de botones, enviar formularios, etc.</p>
+                    <p class="justificado">Modelo de Objetos del Documento (DOM): Permite a JavaScript acceder y manipular elementos HTML y CSS en una página web, lo que permite actualizar dinámicamente el contenido y la apariencia de la página.</p>
+                    <p class="justificado">JavaScript es especialmente adecuado para operaciones asincrónicas, como cargar datos de servidores remotos sin bloquear la ejecución del código.</p>
+                </article>
 
-            <article class="about__icons">
-                <h3 class="about__title">Uso Principal</h3>
-                <p class="about__paragrah">JavaScript es el lenguaje principal para la programación front-end en la web. Se utiliza para crear interacciones de usuario, validar formularios, cargar datos dinámicamente y mucho más.</p>
-                <p class="about__paragrah">JavaScript también se utiliza en el desarrollo back-end a través de entornos como Node.js, lo que permite a los desarrolladores utilizar JavaScript en ambos lados de una aplicación web.</p>
-                <p class="about__paragrah">Frameworks como React Native y NativeScript permiten crear aplicaciones móviles nativas utilizando JavaScript.</p>
-            </article>
+                <article class="about__icons">
+                    <h3 class="about__title">Uso Principal</h3>
+                    <p class="justificado">JavaScript es el lenguaje principal para la programación front-end en la web. Se utiliza para crear interacciones de usuario, validar formularios, cargar datos dinámicamente y mucho más.</p>
+                    <p class="justificado">JavaScript también se utiliza en el desarrollo back-end a través de entornos como Node.js, lo que permite a los desarrolladores utilizar JavaScript en ambos lados de una aplicación web.</p>
+                    <p class="justificado">Frameworks como React Native y NativeScript permiten crear aplicaciones móviles nativas utilizando JavaScript.</p>
+                </article>   
+            </div>  
         </div>
     </section>
+    
+    <section class="container about">
+        <h2 class="subtitle">JavaScript en Acción</h2>
+        <p class="justificado">JavaScript es un lenguaje versátil que se utiliza en una amplia variedad de aplicaciones en la web. Aquí te mostramos algunos ejemplos de cómo se utiliza en la práctica:</p>
+    
+        <article class="javascript-example">
+            <h3 class="about__title">Validación de Formularios</h3>
+            <p class="justificado">JavaScript se utiliza comúnmente para validar datos ingresados por usuarios en formularios web. Puedes verificar si se han completado todos los campos obligatorios y si los datos son válidos antes de enviarlos al servidor.</p>
+        </article>
+    
+        <article class="javascript-example">
+            <h3 class="about__title">Carousels y Sliders</h3>
+            <p class="justificado">Los carruseles de imágenes y los deslizadores son componentes interactivos populares en sitios web. JavaScript se utiliza para crear efectos de desplazamiento suave y permitir a los usuarios navegar por contenido multimedia de manera intuitiva.</p>
+        </article>
+    
+        <article class="javascript-example">
+            <h3 class="about__title">Aplicaciones Web de Tiempo Real</h3>
+            <p class="justificado">JavaScript es esencial para desarrollar aplicaciones web en tiempo real, como chats en vivo y aplicaciones colaborativas. Utiliza tecnologías como WebSockets y librerías como Socket.io para lograr la comunicación en tiempo real.</p>
+        </article>
+    
+        <article class="javascript-example">
+            <h3 class="about__title">Animaciones y Efectos</h3>
+            <p class="justificado">JavaScript permite crear animaciones y efectos visuales dinámicos en sitios web. Puedes utilizar librerías para crear transiciones suaves y efectos sorprendentes.</p>
+        </article>
+    </section>  
 
-
+    <section class="knowledge" style="display: flex; justify-content: center;">
+        <div class="seccion flexBox">
+        <h2 class="subtitle">Semáforo en JavaScript</h2>
+        <div class="semaphore-container">
+            <div class="box">
+                <div class="semaphore">
+                    <div class="light green"></div>
+                    <div class="light yellow"></div>
+                    <div class="light red"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tiempo-ejecucion">
+            <p><span id="execution-time">.............</span> ms</p>
+        </div>
+        <script src="javascript.js"></script>
+    </div>
+</section>     
 </body>
 </html>

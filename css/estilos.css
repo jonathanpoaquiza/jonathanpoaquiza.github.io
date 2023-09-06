@@ -9,6 +9,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.justificado{
+    text-align: justify;
+    font-size: 18px;
+}
+
 .container {
     width: 90%;/*icupa un 90% de la pag*/
     max-width: 1200px;
