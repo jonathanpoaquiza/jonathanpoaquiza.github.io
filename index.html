@@ -1,312 +1,278 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/cubicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="./teoriaCompiladores/css/teoriaCompiladores.css">
-    <title>Compiladores y Lenguajes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <title>Dogs Emotions</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <style>
+    #resultado {
+      font-weight: bold;
+      font-size: 3rem;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
 
-    <header class="hero">
-        <nav class="nav container">
-            <div class="nav__logo">
-                <h2 class="nav__title">Compiladores Y Lenguajes</h2>
-            </div>
+  <main>
+    <div class="px-4 py-2 my-2 text-center border-bottom">
+      <img class="d-block mx-auto mb-2" src="LogotipoV2-Simple.png" alt="" width="80" height="80">
+      <h1 class="display-5 fw-bold">Dogs Emotions</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-0">Clasificación de emociones de perros mediante una cámara web</p>
+      </div>
+    </div>
 
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="./index.html" class="nav__links">Inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#integrantes" class="nav__links">Acerca de</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Blog</a>
-                </li>
+    <div class="b-example-divider"></div>
 
-                <img src="./images/close.svg" class="nav__close">
-            </ul>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-md-4 offset-md-4 text-center">
+          <video id="video" playsinline autoplay style="width: 1px;"></video>
+          <button class="btn btn-primary mb-2" id="cambiar-camara" onclick="cambiarCamara();">Cambiar cámara</button>
+          <canvas id="canvas" width="400" height="400" style="max-width: 100%;"></canvas>
+          <canvas id="otrocanvas" width="180" height="180" style="display: none"></canvas>
+          <div id="resultado"></div>
+        </div>
+      </div>
+    </div>
 
-            <div class="nav__menu">
-                <img src="./images/menu.svg" class="nav__img">
-            </div>
-        </nav>
+    <div class="b-example-divider"></div>
 
-        <section class="hero__container container">
-            <h1 class="hero__title">Proyecto GR1SW: Compiladores Y Lenguajes</h1>
-            <p class="hero__paragraph">Nuestro objetivo es crear y
-                 proporcionar un recurso educativo y de referencia completo sobre compiladores y lenguajes de programación.</p>
-            <a href="#integrantes" class="cta">Go!</a>
-        </section>
-    </header>
+    <div class="bg-dark text-secondary mt-5 px-4 py-2 text-center">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">Dogs Emotions</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Disfruta de este video <a href="https://youtu.be/MwpMEbgC7DA?si=mOIsSC1Jvyce90FF">music</a></p>
+        </div>
+      </div>
+    </div>
 
-    <main>
-        <section id="integrantes" class="integrantes">
-            <div class="integrantes__container container">
-                <img src="./images/leftarrow.svg" class="integrantes__arrow" id="before">
+    <div class="b-example-divider mb-0"></div>
+  </main>
 
-                <section class="integrantes__body integrantes__body--show" data-id="1">
-                    <div class="integrantes__texts">
-                        <h2 class="subtitle">Eddy Arias<span class="integrantes__course">Estudiante
-                                de Software de la EPN</span></h2>
-                                <p class="justificado">Hola, soy Eddy, un estudiante apasionado de la carrera de Software. Mi fascinación por la tecnología y la informática me llevó a esta emocionante trayectoria académica. Durante mi tiempo en la EPN, he adquirido habilidades en programación, desarrollo web y diseño de bases de datos. Creo en el poder de la tecnología para cambiar el mundo y aspiro a convertirme en un ingeniero de software competente, contribuyendo con soluciones innovadoras. Además, me intriga explorar áreas como la inteligencia artificial y la ciberseguridad. Cuando no estoy programando, disfruto explorar nuevas tecnologías y retos técnicos</p>
-                    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-                    <figure class="integrantes__picture">
-                        <img src="./images/foto1.gif" class="integrantes__img">
-                    </figure>
-                </section>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
 
-                <section class="integrantes__body" data-id="2">
-                    <div class="integrantes__texts">
-                        <h2 class="subtitle">Karina Arichavala<span class="integrantes__course">Estudiante
-                                de Software de la EPN</span></h2>
-                                <p class="justificado">¡Hola a todos! Soy Karina, una apasionada estudiante de Software. Desde que era niña, he sentido una gran curiosidad por la tecnología y su impacto en el mundo que nos rodea. Estudiar software me ha brindado la oportunidad de explorar mi creatividad a través de la programación y el desarrollo de aplicaciones innovadoras. En la EPN, he adquirido habilidades en el diseño de software, la resolución de problemas y la colaboración en equipo. Mi interés en la inteligencia artificial y la ciberseguridad me ha llevado a buscar constantemente nuevos desafíos y aprender de ellos. Además de mi amor por la tecnología, disfruto de la música, la lectura y la exploración de nuevas culturas. Estoy emocionada por el futuro y cómo puedo contribuir al mundo de la tecnología a medida que continúo mi viaje en la EPN. ¡Hablemos de tecnología y creemos un futuro digital emocionante juntos!</p>
-                    </div>
+  <script type="text/javascript">
 
-                    <figure class="integrantes__picture">
-                        <img src="./images/foto2.gif" class="integrantes__img">
-                    </figure>
-                </section>
+    var tamano = 400;
+    var video = document.getElementById("video");
+    var canvas = document.getElementById("canvas");
+    var otrocanvas = document.getElementById("otrocanvas");
+    var ctx = canvas.getContext("2d");
+    var currentStream = null;
+    var facingMode = "user";
 
-                <section class="integrantes__body" data-id="3">
-                    <div class="integrantes__texts">
-                        <h2 class="subtitle">Milton Pástor<span class="integrantes__course">Estudiante
-                                de Software de la EPN</span></h2>
-                                <p class="justificado">¡Hola! Soy Milton, un entusiasta estudiante de la carrera de Software. Desde muy joven, me cautivó el mundo de la informática y la programación. En mi recorrido académico en la EPN, he tenido la oportunidad de sumergirme en diversos aspectos de la ingeniería de software, desde el desarrollo de aplicaciones web hasta la optimización de algoritmos. Considero que la tecnología es una herramienta poderosa para abordar desafíos y mejorar la vida de las personas, y estoy comprometido en aprender y aplicar mis conocimientos para crear soluciones innovadoras. Mi interés se extiende a áreas como la inteligencia artificial y la ciberseguridad, donde espero contribuir en el futuro. Cuando no estoy programando, me encanta explorar nuevos enfoques tecnológicos y mantenerme al día con las últimas tendencias del mundo digital.</p>
-                    </div>
+    var modelo = null;
 
-                    <figure class="integrantes__picture">
-                        <img src="./images/foto3.gif" class="integrantes__img">
-                    </figure>
-                </section>
+    (async () => {
+      console.log("Cargando modelo...");
+      modelo = await tf.loadLayersModel("model.json");
+      console.log("Modelo cargado");
+    })();
 
-                <section class="integrantes__body" data-id="4">
-                    <div class="integrantes__texts">
-                        <h2 class="subtitle">Jonathan Poaquiza<span class="integrantes__course">Estudiante
-                                de Software de la EPN</span></h2>
-                        <p class="justificado">¡Hola a todos! Soy Jonathan, un apasionado de la programación y los compiladores, y este espacio es el reflejo de nuestra pasión convertida en un emocionante proyecto. Desde que me adentré en el fascinante mundo de la programación y los compiladores, quedé cautivado por la magia de transformar líneas de código en software funcional. Aquí, te invito a compartir mi amor por los lenguajes de programación, la optimización de código, la construcción de compiladores y a explorar los entresijos de este universo apasionante, desde los conceptos fundamentales hasta las últimas tendencias en compiladores y lenguajes de programación.😊
-                            ¡Bienvenidos a nuestro rincón virtual, donde la programación cobra vida y los compiladores son nuestro lenguaje secreto!</p>
-                    </div>
+    window.onload = function () {
+      mostrarCamara();
+    }
 
-                    <figure class="integrantes__picture">
-                        <img src="./images/foto4.gif" class="integrantes__img">
-                    </figure>
-                </section>
+    function mostrarCamara() {
+      var opciones = {
+        audio: false,
+        video: {
+          width: tamano, height: tamano
+        }
+      }
 
-                <img src="./images/rightarrow.svg" class="integrantes__arrow" id="next">
-            </div>
-        </section>
+      if (navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia(opciones)
+          .then(function (stream) {
+            currentStream = stream;
+            video.srcObject = currentStream;
+            procesarCamara();
+            predecir();
+          })
+          .catch(function (err) {
+            alert("No se pudo utilizar la camara :(");
+            console.log(err);
+            alert(err);
+          })
+      } else {
+        alert("No existe la funcion getUserMedia");
+      }
+    }
 
-        <section class="container about">
-            <h2 class="subtitle">Introducción a Compiladores y Lenguajes:</h2>
-            <p class="about__paragraph">Una visión general de lo que son los compiladores y los lenguajes de programación.
-                Importancia y aplicación en el desarrollo de software.</p>
+    function cambiarCamara() {
+      if (currentStream) {
+        currentStream.getTracks().forEach(track => {
+          track.stop();
+        });
+      }
 
-            <div class="about__main">
-                <article class="about__icons">
-                    <img src="./images/compiler.svg" class="about__icon">
-                    <h3 class="about__title">Compilador</h3>
-                    <p class="justificado">Un compilador traduce el código de programación humano en instrucciones que una computadora puede entender y ejecutar. Permite a los programadores concentrarse en la lógica y la funcionalidad, liberándolos de la necesidad de escribir en lenguaje de máquina.</p>
-                </article>
+      facingMode = facingMode == "user" ? "environment" : "user";
 
-                <article class="about__icons">
-                    <img src="./images/traductor.svg" class="about__icon">
-                    <h3 class="about__title">Traductor</h3>
-                    <p class="justificado">Se refiere a etapas que convierten código legible en un lenguaje de programación en una forma que la máquina pueda entender. Etapas como el análisis léxico y sintáctico, descomponen el código en partes comprensibles y establecen la estructura. Esto permite que la máquina procese y ejecute el programa.</p>
-                </article>
-
-                <article class="about__icons">
-                    <img src="./images/language.svg" class="about__icon">
-                    <h3 class="about__title">Lenguaje de programación</h3>
-                    <p class="justificado">Los lenguajes de programación son medios para dar instrucciones a las computadoras. Vienen en diferentes niveles de complejidad y abstracción, permitiendo a los programadores expresar ideas y algoritmos de manera estructurada.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="knowledge">
-            <div class="knowledge__container container">
-                <div class="knowledege__texts">
-                    <h2 class="subtitle">Teoría de Compiladores:</h2>
-                    <a href="./teoriaCompiladores/teoriaCompiladores.html" class="cta">Más información</a>
-                </div>
-
-                <figure class="knowledge__picture">
-                    <img src="./images/cubeC.jpg" class="knowledge__img">
-                </figure>
-            </div>
-        </section>
+      var opciones = {
+        audio: false,
+        video: {
+          facingMode: facingMode, width: tamano, height: tamano
+        }
+      };
 
 
-        <section class="language container">
-            <h2 class="subtitle">Lenguajes de programación</h2>
+      navigator.mediaDevices.getUserMedia(opciones)
+        .then(function (stream) {
+          currentStream = stream;
+          video.srcObject = currentStream;
+        })
+        .catch(function (err) {
+          console.log("Oops, hubo un error", err);
+        })
+    }
 
-            <div class="language__table">
-                <div class="language__element">
-                    
-                    <h3 class="language__language">Python <img src="./images/python.svg"></h3>
-                    <p class="language__name">Lenguaje de alto nivel</p>
-                    <div class="language__items">
-                        <p class="language__features">Sintaxis Clara y Legible</p>
-                    </div>
+    function procesarCamara() {
+      ctx.drawImage(video, 0, 0, tamano, tamano, 0, 0, tamano, tamano);
+      setTimeout(procesarCamara, 20);
+    }
 
-                    <a href="./lenguajesProgramacion/python.html" class="language__cta">Más información</a>
-                </div>
+    function predecir() {
+      if (modelo != null) {
+        resample_single(canvas, 180, 180, otrocanvas);
+
+        //Hacer la predicción
+        var ctx2 = otrocanvas.getContext("2d");
+        var imgData = ctx2.getImageData(0, 0, 180, 180);
+
+        var arr = [];
+        var arr180 = [];
+
+        for (var p = 0; p < imgData.data.length; p += 4) {
+          var rojo = imgData.data[p] / 255;
+          var verde = imgData.data[p + 1] / 255;
+          var azul = imgData.data[p + 2] / 255;
+
+          var gris = (rojo + verde + azul) / 3;
+
+          arr180.push([gris]);
+          if (arr180.length == 180) {
+            arr.push(arr180);
+            arr180 = [];
+          }
+        }
+
+        arr = [arr];
+
+        var tensor = tf.tensor4d(arr);
+        var resultado = modelo.predict(tensor).dataSync();
+
+        var respuesta;
+        if (resultado[0] > resultado[1] && resultado[0] > resultado[2] && resultado[0] > resultado[3]) {
+          respuesta = "Perrito Feliz";
+        } else if (resultado[1] > resultado[0] && resultado[1] > resultado[2] && resultado[1] > resultado[3]) {
+          respuesta = "Perrito Triste";
+        } else if (resultado[2] > resultado[0] && resultado[2] > resultado[1] && resultado[2] > resultado[3]) {
+          respuesta = "Perrito Enojado";
+        } else if (resultado[3] > resultado[0] && resultado[3] > resultado[1] && resultado[3] > resultado[2]) {
+          respuesta = "Perrito Relajado";
+        } else {
+          respuesta = "Emoción no reconocida";
+        }
+        document.getElementById("resultado").innerHTML = respuesta;
+
+      }
+
+      setTimeout(predecir, 100);
+    }
+
+    /**
+       * Hermite resize - fast image resize/resample using Hermite filter. 1 cpu version!
+       * 
+       * @param {HtmlElement} canvas
+       * @param {int} width
+       * @param {int} height
+       * @param {boolean} resize_canvas if true, canvas will be resized. Optional.
+       * Cambiado por RT, resize canvas ahora es donde se pone el chiqitillllllo
+       */
+    function resample_single(canvas, width, height, resize_canvas) {
+      var width_source = canvas.width;
+      var height_source = canvas.height;
+      width = Math.round(width);
+      height = Math.round(height);
+
+      var ratio_w = width_source / width;
+      var ratio_h = height_source / height;
+      var ratio_w_half = Math.ceil(ratio_w / 2);
+      var ratio_h_half = Math.ceil(ratio_h / 2);
+
+      var ctx = canvas.getContext("2d");
+      var ctx2 = resize_canvas.getContext("2d");
+      var img = ctx.getImageData(0, 0, width_source, height_source);
+      var img2 = ctx2.createImageData(width, height);
+      var data = img.data;
+      var data2 = img2.data;
+
+      for (var j = 0; j < height; j++) {
+        for (var i = 0; i < width; i++) {
+          var x2 = (i + j * width) * 4;
+          var weight = 0;
+          var weights = 0;
+          var weights_alpha = 0;
+          var gx_r = 0;
+          var gx_g = 0;
+          var gx_b = 0;
+          var gx_a = 0;
+          var center_y = (j + 0.5) * ratio_h;
+          var yy_start = Math.floor(j * ratio_h);
+          var yy_stop = Math.ceil((j + 1) * ratio_h);
+          for (var yy = yy_start; yy < yy_stop; yy++) {
+            var dy = Math.abs(center_y - (yy + 0.5)) / ratio_h_half;
+            var center_x = (i + 0.5) * ratio_w;
+            var w0 = dy * dy; //pre-calc part of w
+            var xx_start = Math.floor(i * ratio_w);
+            var xx_stop = Math.ceil((i + 1) * ratio_w);
+            for (var xx = xx_start; xx < xx_stop; xx++) {
+              var dx = Math.abs(center_x - (xx + 0.5)) / ratio_w_half;
+              var w = Math.sqrt(w0 + dx * dx);
+              if (w >= 1) {
+                //pixel too far
+                continue;
+              }
+              //hermite filter
+              weight = 2 * w * w * w - 3 * w * w + 1;
+              var pos_x = 4 * (xx + yy * width_source);
+              //alpha
+              gx_a += weight * data[pos_x + 3];
+              weights_alpha += weight;
+              //colors
+              if (data[pos_x + 3] < 255)
+                weight = weight * data[pos_x + 3] / 250;
+              gx_r += weight * data[pos_x];
+              gx_g += weight * data[pos_x + 1];
+              gx_b += weight * data[pos_x + 2];
+              weights += weight;
+            }
+          }
+          data2[x2] = gx_r / weights;
+          data2[x2 + 1] = gx_g / weights;
+          data2[x2 + 2] = gx_b / weights;
+          data2[x2 + 3] = gx_a / weights_alpha;
+        }
+      }
 
 
-                <div class="language__element language__element--best">
-                    <h3 class="language__language">Java <img src="./images/java.svg"></h3>
-                    <p class="language__name">Lenguaje de alto nivel</p>
-                    <div class="language__items">
-                        <p class="language__features">Portabilidad y Compatibilidad</p>
-                    </div>
-
-                    <a href="./lenguajesProgramacion/java.html" class="language__cta">Más información</a>
-                </div>
-
-                <div class="language__element">
-                    <h3 class="language__language">C++ <img src="./images/cpp.svg"></h3>
-                    <p class="language__name">Lenguaje de alto nivel</p>
-                    <div class="language__items">
-                        <p class="language__features">Programación Orientada a Objetos y Rendimiento</p>
-                    </div>
-
-                    <a href="./lenguajesProgramacion/c++.html" class="language__cta">Más información</a>
-                </div>
-
-                <div class="language__element language__element--best">
-                    <h3 class="language__language">JavaScript <img src="./images/javascript.svg"></h3>
-                    <p class="language__name">Lenguaje de alto nivel</p>
-                    <div class="language__items">
-                        <p class="language__features">Interacción dinámica</p>
-                    </div>
-
-                    <a href="./lenguajesProgramacion/javascript.html" class="language__cta">Más información</a>
-                </div>
-
-                <div class="language__element language__element--best">
-                    <h3 class="language__language">COOL <img src="./images/cool.svg"></h3>
-                    <p class="language__name">Un Lenguaje Orientado a Objetos Concurrente</p>
-                    <div class="language__items">
-                        <p class="language__features">POO + Concurrencia</p>
-                    </div>
-
-                    <a href="./lenguajesProgramacion/cool.html" class="language__cta">Más información</a>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section class="questions container">
-            <h2 class="subtitle">Preguntas frecuentes</h2>
-            <p class="questions__paragraph">Cuestiones sobre la teoría de Compiladores y Lenguajes</p>
-
-            <section class="questions__container">
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Qué es un lenguaje de alto nivel?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-
-                        <p class="questions__show">Un lenguaje de alto nivel es un lenguaje de programación que se acerca al lenguaje humano y permite a los programadores escribir código de manera más legible y abstracta.</p>
-                    </div>
-                </article>
-
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Cuál es el propósito del análisis léxico y sintáctico en la compilación?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-
-                        <p class="questions__show">El análisis léxico identifica y divide el código en tokens, mientras que el análisis sintáctico verifica la estructura gramatical, preparando el código para su transformación en lenguaje de máquina.</p>
-                    </div>
-                </article>
-
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Qué es la depuración y cómo se lleva a cabo en el proceso de programación?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-
-                        <p class="questions__show">La depuración es el proceso de encontrar y corregir errores en el código. Se realiza mediante pruebas, seguimiento de variables y uso de herramientas específicas para identificar y resolver problemas en el programa.</p>
-                    </div>
-                </article>
-
-                <article class="questions__padding">
-                    <div class="questions__answer">
-                        <h3 class="questions__title">¿Cuál es la diferencia entre un compilador y un intérprete?
-                            <span class="questions__arrow">
-                                <img src="./images/arrow.svg" class="questions__img">
-                            </span>
-                        </h3>
-
-                        <p class="questions__show">La principal diferencia radica en cómo procesan el código fuente. Los compiladores, utilizados en lenguajes como C++ y Java, traducen todo el código a un archivo ejecutable independiente. En contraste, los intérpretes, como en Python y JavaScript, ejecutan el código línea por línea en tiempo real.</p>
-                    </div>
-                </article>
-            </section>
-
-            <section class="questions__offer">
-                <h2 class="subtitle">¿Tienes más preguntas?</h2>
-                <p class="questions__copy">¡Visita nuestras redes sociales!</p>
-                <a href="#redes" class="cta">GO!</a>
-            </section>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <section class="footer__container container">
-            <nav class="nav nav--footer">
-                <h2 class="footer__title">Compiladores y Lenguajes.</h2>
-
-                <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="./index.html" class="nav__links">Inicio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#integrantes" class="nav__links">Acerca de</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#redes" class="nav__links">Contacto</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Blog</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-
-        <section id="redes" class="footer__copy container">
-            <div class="footer__social">
-                <a href="https://www.facebook.com/profile.php?id=100090275790584" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
-                <a href="https://www.instagram.com/pantherscode/" class="footer__icons"><img src="./images/instagram.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
-                <a href="https://www.youtube.com/watch?v=MwpMEbgC7DA" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
-            </div>
-
-            <h3 class="footer__copyright">Derechos reservados &copy; Compiladores y Lenguajes - EPN</h3>
-        </section>
-    </footer>
-
-    <script src="./js/slider.js"></script>
-    <script src="./js/questions.js"></script>
-    <script src="./js/menu.js"></script>
+      ctx2.putImageData(img2, 0, 0);
+    }
+  </script>
 </body>
 
 </html>
